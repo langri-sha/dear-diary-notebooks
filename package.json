@@ -24,8 +24,13 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "commitizen": "^2.8.2",
-    "cz-conventional-changelog": "^1.1.6"
+    "cz-conventional-changelog": "^1.1.6",
+    "standard": "^7.1.2"
   }
 }
