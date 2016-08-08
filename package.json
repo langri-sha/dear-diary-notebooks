@@ -1,0 +1,22 @@
+{
+  "name": "dear-diary-notebooks",
+  "version": "1.0.0",
+  "description": "Maja's notebooks touring the interwebs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langri-sha/dear-diary-notebooks.git"
+  },
+  "keywords": [
+    "dear-diary-notebooks"
+  ],
+  "author": "Filip Dupanović",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/langri-sha/dear-diary-notebooks/issues"
+  },
+  "homepage": "https://github.com/langri-sha/dear-diary-notebooks#readme"
+}
