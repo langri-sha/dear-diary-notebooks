@@ -18,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/langri-sha/dear-diary-notebooks/issues"
   },
-  "homepage": "https://github.com/langri-sha/dear-diary-notebooks#readme"
+  "homepage": "https://github.com/langri-sha/dear-diary-notebooks#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.2",
+    "cz-conventional-changelog": "^1.1.6"
+  }
 }
