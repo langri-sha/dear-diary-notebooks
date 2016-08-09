@@ -1,7 +1,7 @@
-import 'normalize.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import style from './styles'
 import {DearDiary} from './components'
 import webfont from './lib/webfont'
 
@@ -13,7 +13,8 @@ import webfont from './lib/webfont'
     text: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
   })
 
-  const container = document.createElement('article')
+  const container = document.createElement('div')
+  container.className = style.container
   document.body.appendChild(container)
 
   ReactDOM.render(<DearDiary />, container)

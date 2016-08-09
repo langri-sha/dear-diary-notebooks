@@ -13,6 +13,11 @@ body {
   font-size: 1.6rem;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  color: var(--color-text);
+  font-family: var(--font-default);
 }
 
 .container {
@@ -20,4 +25,25 @@ body {
   height: 100%;
 
   display: flex;
+
+  flex-flow: row nowrap;
+}
+
+article {
+  display: flex;
+  flex: 1 0 auto;
+  align-self: stretch;
+
+  background-repeat: no-repeat;
+  background-image: url("../images/00.png");
+  background-position: center bottom;
+  background-size: contain;
+}
+
+aside {
+  display: flex;
+  flex: 1 0 auto;
+  align-self: stretch;
+
+  background-color: blue;
 }
