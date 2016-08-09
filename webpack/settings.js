@@ -3,6 +3,7 @@ import webpack from 'webpack'
 
 import {resolve, ours, theirs, kb} from './helpers'
 import postcss from './postcss'
+import imageWebpackLoader from './images'
 
 export default ({
   target: 'web',
@@ -13,6 +14,7 @@ export default ({
     publicPath: '/'
   },
   postcss,
+  imageWebpackLoader,
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Dear Diary Notebooks'
@@ -48,7 +50,7 @@ export default ({
       test: /\.(jpe?g|png|gif|svg)$/i,
       loaders: [
         'url?limit=${kb(10)}&hash=sha512&digest=hex&name=images/[hash].[ext]',
-        'image-webpack?bypassOnDebug=true&optimizationLevel=7&interlaced=false'
+        'image-webpack'
       ],
       include: ours
     }]
