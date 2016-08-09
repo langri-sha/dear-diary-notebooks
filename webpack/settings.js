@@ -45,15 +45,12 @@ export default ({
       loaders: 'style!css',
       include: theirs
     }, {
-      test: /\.(jpe?g|png|gif)$/i,
+      test: /\.(jpe?g|png|gif|svg)$/i,
       loaders: [
         'url?hash=sha512&digest=hex&name=images/[hash].[ext]',
         'image-webpack?bypassOnDebug=true&optimizationLevel=7&interlaced=false'
       ],
       include: ours
-    }, {
-      test: /\.svg$/,
-      loader: 'file'
     }]
   }
 })
