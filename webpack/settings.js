@@ -1,23 +1,8 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import path from 'path'
 import webpack from 'webpack'
 
+import {resolve, ours, theirs} from './helpers'
 import postcss from './postcss'
-
-// Returns absolute paths relative to the package root.
-const resolve = (...args) => (
-  path.resolve(process.cwd(), ...args)
-)
-
-// Returns true for paths that match our sources.
-const ours = (absolute) => (
-  absolute.startsWith(resolve('src'))
-)
-
-// Returns true for paths matching vendor sources.
-const theirs = (absolute) => (
-  !ours(absolute)
-)
 
 export default ({
   target: 'web',
