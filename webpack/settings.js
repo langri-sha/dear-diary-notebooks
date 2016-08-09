@@ -30,8 +30,8 @@ export default ({
     }],
     loaders: [{
       test: /\.js$/,
-      include: ours,
-      loader: 'babel'
+      loader: 'babel',
+      include: ours
     }, {
       test: /\.html$/,
       loader: 'nunjucks',
