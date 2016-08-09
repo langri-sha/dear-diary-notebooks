@@ -1,7 +1,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import webpack from 'webpack'
 
-import {resolve, ours, theirs} from './helpers'
+import {resolve, ours, theirs, kb} from './helpers'
 import postcss from './postcss'
 
 export default ({
@@ -47,7 +47,7 @@ export default ({
     }, {
       test: /\.(jpe?g|png|gif|svg)$/i,
       loaders: [
-        'url?hash=sha512&digest=hex&name=images/[hash].[ext]',
+        'url?limit=${kb(10)}&hash=sha512&digest=hex&name=images/[hash].[ext]',
         'image-webpack?bypassOnDebug=true&optimizationLevel=7&interlaced=false'
       ],
       include: ours

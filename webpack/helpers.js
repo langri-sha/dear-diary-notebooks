@@ -14,3 +14,5 @@ export const ours = (absolute) => (
 export const theirs = (absolute) => (
   !ours(absolute)
 )
+
+export const kb = (n) => 1024 * n
