@@ -69,7 +69,7 @@ module.exports = {
       include: ours
     }, {
       test: /\.svg$/,
-      loader: 'svg-url'
+      loader: 'file'
     }]
   }
 }
