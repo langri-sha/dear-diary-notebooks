@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "PATH=$PATH:$(pwd)/node_modules/.bin webpack -p --config webpack --optimize-minimize --optimize-dedupe --progress",
-    "static": "PATH=$PATH:$(pwd)/node_modules/.bin static --port ${PORT:=8080} dist --host-address 0.0.0.0 --gzip --spa ",
+    "static": "PATH=$PATH:$(pwd)/node_modules/.bin static --port ${PORT:=8080} dist --host-address 0.0.0.0 --gzip",
     "start": "PATH=$PATH:$(pwd)/node_modules/.bin webpack-dev-server -d --config webpack --hot --https --watch --host 0.0.0.0",
     "analyze": "PATH=$PATH:$(pwd)/node_modules/.bin webpack -p --config webpack --optimize-minimize --optimize-dedupe --json | webpack-bundle-size-analyzer",
     "container": "export NAME=diary WORKDIR=/$NAME; if docker ps -a | grep -q $NAME; then npm run -s container:start; else npm run -s container:run; fi",
