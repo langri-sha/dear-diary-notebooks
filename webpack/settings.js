@@ -14,7 +14,6 @@ export default ({
   },
   postcss,
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'Dear Diary Notebooks'
     })
