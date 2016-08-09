@@ -36,7 +36,7 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js', '.scss', '.css'],
-    packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
+    packageMains: ['browser', 'web', 'browserify', 'main', 'style']
   },
   module: {
     preLoaders: [{
