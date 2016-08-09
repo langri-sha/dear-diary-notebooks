@@ -1,7 +1,7 @@
-const cssnext = require('postcss-cssnext')
-const importer = require('postcss-import')
-const reporter = require('postcss-reporter')
-const stylelint = require('stylelint')
+import cssnext from 'postcss-cssnext'
+import importer from 'postcss-import'
+import reporter from 'postcss-reporter'
+import stylelint from 'stylelint'
 
 const stylelintConfiguration = {
   extends: 'stylelint-config-standard',
@@ -9,7 +9,7 @@ const stylelintConfiguration = {
 }
 
 // A callable that provides the PostCSS configuration.
-module.exports = (webpack) => ([
+export default (webpack) => ([
   stylelint(stylelintConfiguration),
   importer({
     addToDependency: webpack,

@@ -1,8 +1,8 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
-const webpack = require('webpack')
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import path from 'path'
+import webpack from 'webpack'
 
-const postcss = require('./postcss')
+import postcss from './postcss'
 
 // Returns absolute paths relative to the package root.
 const resolve = (...args) => (
@@ -19,7 +19,7 @@ const theirs = (absolute) => (
   !ours(absolute)
 )
 
-module.exports = {
+export default ({
   target: 'web',
   entry: './src/index',
   output: {
@@ -72,4 +72,4 @@ module.exports = {
       loader: 'file'
     }]
   }
-}
+})
