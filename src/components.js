@@ -21,7 +21,7 @@ const Diary = () => (
 )
 
 export const DearDiary = () => (
-  <div className={style.container}>
+  <div>
     <Content />
     <Diary />
   </div>

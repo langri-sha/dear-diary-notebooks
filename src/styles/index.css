@@ -8,11 +8,9 @@ html {
 
 body {
   position: absolute;
-  top: 0;
-  left: 0;
   font-size: 1.6rem;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 
@@ -21,29 +19,43 @@ body {
 }
 
 .container {
+  height: 100%;
+  margin: 0 2rem;
+}
+
+[data-reactroot] {
+  display: flex;
+  flex-flow: row nowrap;
+
   width: 100%;
   height: 100%;
-
-  display: flex;
-
-  flex-flow: row nowrap;
 }
 
 article {
   display: flex;
-  flex: 1 0 auto;
+  flex: 1 0;
   align-self: stretch;
+  align-items: center;
+  order: 2;
+
+  & header {
+    font-family: var(--font-heading);
+  }
+
+  & header img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+aside {
+  display: flex;
+  flex: 1 0;
+  align-self: stretch;
+  order: 1;
 
   background-repeat: no-repeat;
   background-image: url("../images/00.png");
   background-position: center bottom;
   background-size: contain;
-}
-
-aside {
-  display: flex;
-  flex: 1 0 auto;
-  align-self: stretch;
-
-  background-color: blue;
 }
