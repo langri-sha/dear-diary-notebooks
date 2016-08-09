@@ -4,6 +4,7 @@
   "description": "Maja's notebooks touring the interwebs",
   "main": "src/index.js",
   "scripts": {
+    "build": "PATH=$PATH:$(pwd)/node_modules/.bin webpack -p --config webpack --progress",
     "start": "PATH=$PATH:$(pwd)/node_modules/.bin webpack-dev-server -d --config webpack --hot --https --watch --host 0.0.0.0",
     "container": "export NAME=diary WORKDIR=/$NAME; if docker ps -a | grep -q $NAME; then npm run -s container:start; else npm run -s container:run; fi",
     "container:start": "docker start -ai diary",
