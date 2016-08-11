@@ -2,6 +2,7 @@
   "name": "dear-diary-notebooks",
   "version": "1.0.0",
   "description": "Maja's notebooks touring the interwebs",
+  "private": true,
   "main": "src/index.js",
   "scripts": {
     "build": "PATH=$PATH:$(pwd)/node_modules/.bin webpack -p --config webpack --optimize-minimize --optimize-dedupe --progress",
