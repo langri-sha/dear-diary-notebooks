@@ -62,8 +62,6 @@
     "standard": "^8.0.0-beta.3",
     "standard-loader": "^4.0.0",
     "style-loader": "^0.13.1",
-    "stylelint": "^7.0.3",
-    "stylelint-config-standard": "^11.0.0",
     "url-loader": "^0.5.7",
     "webfontloader": "^1.6.26",
     "webpack": "^2.1.0-beta.20"
@@ -72,6 +70,8 @@
     "commitizen": "^2.8.2",
     "cz-conventional-changelog": "^1.1.6",
     "source-map-support": "^0.4.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-standard": "^11.0.0",
     "webpack-bundle-size-analyzer": "^2.0.2",
     "webpack-dev-server": "^2.1.0-beta.0"
   }
