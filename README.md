@@ -1,6 +1,6 @@
 # dear-diary-notebooks
 
-[[![JavaScript Style Guide][standard_badge]][standard] ![Commitizen friendly][commitizen_badge]][commitizen]
+[![JavaScript Style Guide][standard_badge]][standard] [![Commitizen friendly][commitizen_badge]][commitizen] [![bitHound Dependencies][bithound_dependencies_badge]][bithound_dependencies] [![bitHound Dev Dependencies][bithound_dev_dependencies_badge]][bithound_dev_dependencies]
 
 ## References
 
@@ -19,7 +19,11 @@ Maja Zorić, are distributed under [CC-BY-NC-ND 4.0][by_nc_nd].
 [license]: LICENSE
 [by_nc_nd]: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-[commitizen]: http://commitizen.github.io/cz-cli/
+[bithound_dependencies_badge]: https://www.bithound.io/github/langri-sha/dear-diary-notebooks/badges/dependencies.svg
+[bithound_dependencies]: https://www.bithound.io/github/langri-sha/dear-diary-notebooks/master/dependencies/npm
+[bithound_dev_dependencies_badge]: https://www.bithound.io/github/langri-sha/dear-diary-notebooks/badges/devDependencies.svg
+[bithound_dev_dependencies]: https://www.bithound.io/github/langri-sha/dear-diary-notebooks/master/dependencies/npm
 [commitizen_badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[standard]: http://standardjs.com/
+[commitizen]: http://commitizen.github.io/cz-cli/
 [standard_badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard]: http://standardjs.com/
