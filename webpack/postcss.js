@@ -2,7 +2,7 @@ import cssnext from 'postcss-cssnext'
 import importer from 'postcss-import'
 import reporter from 'postcss-reporter'
 
-const stylelint = (
+const stylelint = () => (
   require('stylelint')({
     extends: 'stylelint-config-standard',
     rules: []
