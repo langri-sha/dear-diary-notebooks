@@ -4,7 +4,7 @@
 !.editorconfig
 !.eslintrc
 !.travis.yml
-
 npm-debug.log*
 
 dist/
+node_modules/
