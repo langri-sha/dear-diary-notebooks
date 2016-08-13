@@ -8,6 +8,7 @@
     "build": "PATH=$PATH:$(pwd)/node_modules/.bin webpack -p --config webpack --optimize-minimize --optimize-dedupe --progress",
     "static": "PATH=$PATH:$(pwd)/node_modules/.bin static --port ${PORT:=8080} dist --host-address 0.0.0.0 --gzip",
     "start": "PATH=$PATH:$(pwd)/node_modules/.bin; [ ! -e dist/diary.key ] && npm run -s certs; webpack-dev-server -d --config webpack --hot --watch --https --port 443 --host 0.0.0.0 --key dist/diary.key --cert dist/diary.crt",
+    "lint": "PATH=$PATH:$(pwd)/node_modules/.bin; standard ./webpack/**.js | snazzy",
     "analyze": "PATH=$PATH:$(pwd)/node_modules/.bin webpack -p --config webpack --optimize-minimize --optimize-dedupe --json | webpack-bundle-size-analyzer",
     "container": "export NAME=diary WORKDIR=/$NAME; if docker ps -a | grep -q $NAME; then npm run -s container:start; else npm run -s container:run; fi",
     "container:start": "docker start -ai diary",
@@ -70,6 +71,7 @@
   "devDependencies": {
     "commitizen": "^2.8.2",
     "cz-conventional-changelog": "^1.1.6",
+    "snazzy": "^4.0.1",
     "source-map-support": "^0.4.2",
     "stylelint": "^7.0.3",
     "stylelint-config-standard": "^12.0.0",
