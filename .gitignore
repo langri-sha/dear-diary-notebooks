@@ -3,6 +3,7 @@
 !.babelrc
 !.editorconfig
 !.eslintrc
+!.travis.yml
 
 npm-debug.log*
 
