@@ -1,6 +1,3 @@
-@custom-media --mobile (width >= 0);
-@custom-media --phone (width >= 544px);
-@custom-media --portrait-tablet (orientation: landscape) and (width >= 768px);
-@custom-media --landscape-tablet (orientation: portrait) and (width >= 768px);
-@custom-media --portrait-desktop (orientation: landscape) and (width => 1200px);
-@custom-media --landscape-huge (orientation: portrait) and (width => 1200px);
+@custom-media --small-viewport (width >=  0);
+@custom-media --medium-viewport (width >= 34em);
+@custom-media --large-viewport (width >= 75em);
