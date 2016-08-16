@@ -65,6 +65,20 @@ article {
   }
 }
 
+.shopLink {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 1em;
+  text-decoration: none;
+  border-radius: 1rem;
+
+  font-family: var(--font-heading);
+
+  &:hover {
+    background: var(--color-accent);
+  }
+}
+
 aside {
   display: flex;
   flex: 1 0;
