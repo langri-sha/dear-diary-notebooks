@@ -10,7 +10,7 @@ import webfont from './lib/webfont'
   // Load fonts.
   webfont({
     families: ['Amatic SC:400,400i,500,700', 'Dancing Script:400,400i,500,700'],
-    text: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.!'
+    text: 'abcćdefghijklmnopqrstuvwxyzABCĆDEFGHIJKLMNOPQRSTUVWXYZ,.!\''
   })
 
   const container = document.createElement('div')

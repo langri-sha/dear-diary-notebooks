@@ -18,8 +18,17 @@ const Content = () => (
           src={logo}
         />
       </h1>
+      <h2>
+        Hardcover notebooks with with handmade patterns
+      </h2>
     </header>
+    <p>
+      Hello! My name is Maja Zorić and I'm a painter. For all those dreamers who like botanical and floral design, something from nature, with love!
+    </p>
     <ShopLink />
+    <footer>
+      Foo Bar Baz
+    </footer>
   </article>
 )
 
