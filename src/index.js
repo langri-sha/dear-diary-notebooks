@@ -9,7 +9,7 @@ import webfont from './lib/webfont'
 (function main () {
   // Load fonts.
   webfont({
-    families: ['Amatic SC:400,400i,500,700', 'Lobster:400,400i,500,700'],
+    families: ['Amatic SC:400,400i,500,700', 'Dancing Script:400,400i,500,700'],
     text: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.!'
   })
 
